@@ -30,13 +30,26 @@ This prototype replicates the **trigger → transformation** mechanism proposed 
 
 ---
 
-## 📂 Repository Structure
+ 📂 Repository Structure
 
 ```bash
-📁 models/                 # ONNX face detection model
-📁 dependencies/           # Utility scripts (e.g., box_utils.py)
-📁 input_videos/           # Sample videos for testing
-📁 output/                 # Transformed video outputs
-📄 facedetectandblur.py    # Main face detection and blurring script
-📄 requirements.txt        # Python dependencies
-📄 README.md               # Project documentation
+facedetectandblur/
+├── facedetectandblur.py
+├── models/
+│   └── ultraface.onnx              # ONNX model file
+├── examples/
+│   ├── images/
+│   │   └── sample1.jpg
+│   └── videos/
+│       ├── video_30fps.mp4
+│       └── video_16fps.mp4
+├── outputs/
+│   ├── blurred_video_30fps.mp4
+│   └── blurred_video_16fps.mp4
+├── screenshots/
+│   ├── original_frame.jpg
+│   └── blurred_frame.jpg
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── download_models.py
